@@ -1,0 +1,15 @@
+#main { 
+    margin-top: 10rem;
+    @media (max-width:768px) {
+        margin-top: 2rem;
+    }
+    header {
+        h1, h5, h6 {
+            text-align: center;
+            margin: 2rem 0;
+        }
+    }
+    .text-center {
+        margin-top: 2rem;
+    }
+}
