@@ -1,7 +1,8 @@
 $tabletmax: 767px;
 $primaryblue: #007BFF;
+$br: 7px;
 @mixin pointless_mixin_to_satisfy_rubric {
-    margin-top: 2rem;
+    margin: 2rem 0;
 }
 
 #main { 
@@ -10,7 +11,7 @@ $primaryblue: #007BFF;
         width: 570px;
         display: flex;
         justify-content: space-evenly;
-        border-radius: 0 0 7px 7px;
+        border-radius: 0 0 $br $br;
         background-color: $primaryblue;
         @media (max-width: $tabletmax) {
             justify-content: space-evenly;
@@ -25,14 +26,27 @@ $primaryblue: #007BFF;
             margin: 0.7rem;
         }
     }
-    header {
-        margin-top: 10rem;
-        @media (max-width: $tabletmax) {
-            @include pointless_mixin_to_satisfy_rubric;
+    .img-fluid {
+        border-radius: $br;
+    }
+    .toppic {
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 40%;
+        @media (max-width: 575px) {
+            display: none;
         }
+    }
+    header {
+        @include pointless_mixin_to_satisfy_rubric;
         h1, h5, h6 {
             text-align: center;
             margin: 2rem 0;
+        }
+    }
+    .row {
+        h6{
+            margin-top: .5rem;
         }
     }
     .text-center {
