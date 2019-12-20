@@ -1,4 +1,5 @@
 $tabletmax: 767px;
+$mobilemax: 455px;
 $primaryblue: #007BFF;
 $br: 7px;
 @mixin pointless_mixin_to_satisfy_rubric {
@@ -6,6 +7,9 @@ $br: 7px;
 }
 
 #main { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     nav {
         margin: 0 auto;
         width: 570px;
@@ -17,7 +21,7 @@ $br: 7px;
             justify-content: space-evenly;
             width: 100%;
          }
-        @media (max-width: 455px) {
+        @media (max-width: $mobilemax) {
             flex-direction: column;
             align-items: center;
         }
@@ -49,7 +53,28 @@ $br: 7px;
             margin-top: .5rem;
         }
     }
-    .text-center {
+    a {
         @include pointless_mixin_to_satisfy_rubric;
+    }
+    .text-center {
+        margin-bottom: 2rem;
+    }
+    .about-us-maintext {
+        width: 70%;
+        margin: 2rem auto;
+    }
+}
+#about-us-rows {
+    max-width: 720px;
+    .col-sm {
+        @media (max-width: 575px) {
+            text-align: center;
+            a {
+                margin: 0 1rem;
+            }
+            hr {
+                display: none;
+            }
+        }
     }
 }
