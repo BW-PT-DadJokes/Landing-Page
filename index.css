@@ -1,3 +1,8 @@
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #main nav {
   margin: 0 auto;
   width: 570px;
@@ -45,8 +50,30 @@
 #main .row h6 {
   margin-top: 0.5rem;
 }
-#main .text-center {
+#main a {
   margin: 2rem 0;
+}
+#main .text-center {
+  margin-bottom: 2rem;
+}
+#main .about-us-maintext {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+#about-us-rows {
+  max-width: 720px;
+}
+@media (max-width: 575px) {
+  #about-us-rows .col-sm {
+    text-align: center;
+  }
+  #about-us-rows .col-sm a {
+    margin: 0 1rem;
+  }
+  #about-us-rows .col-sm hr {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
