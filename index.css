@@ -1,8 +1,32 @@
-#main {
+#main nav {
+  margin: 0 auto;
+  width: 570px;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 0 0 7px 7px;
+  background-color: #007BFF;
+}
+@media (max-width: 767px) {
+  #main nav {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+@media (max-width: 455px) {
+  #main nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#main nav a, #main nav a:visited {
+  color: white;
+  margin: 0.7rem;
+}
+#main header {
   margin-top: 10rem;
 }
-@media (max-width: 768px) {
-  #main {
+@media (max-width: 767px) {
+  #main header {
     margin-top: 2rem;
   }
 }
