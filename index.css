@@ -26,6 +26,7 @@
   border-radius: 7px;
 }
 #main .toppic {
+  display: none;
   margin: 0 auto;
   margin-top: 2rem;
   width: 40%;
