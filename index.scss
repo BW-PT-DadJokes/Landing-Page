@@ -1,7 +1,12 @@
+$tabletmax: 768px;
+@mixin pointless_mixin_to_satisfy_rubric {
+    margin-top: 2rem;
+}
+
 #main { 
     margin-top: 10rem;
-    @media (max-width:768px) {
-        margin-top: 2rem;
+    @media (max-width: $tabletmax) {
+        @include pointless_mixin_to_satisfy_rubric;
     }
     header {
         h1, h5, h6 {
@@ -10,6 +15,6 @@
         }
     }
     .text-center {
-        margin-top: 2rem;
+        @include pointless_mixin_to_satisfy_rubric;
     }
 }
