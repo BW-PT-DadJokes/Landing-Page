@@ -5,7 +5,7 @@
 }
 #main nav {
   margin: 0 auto;
-  width: 570px;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   border-radius: 0 0 7px 7px;
@@ -55,6 +55,14 @@
 }
 #main .text-center {
   margin-bottom: 2rem;
+}
+#main footer nav {
+  border-radius: 7px 7px 0 0;
+  background-color: white;
+}
+#main footer nav a, #main footer nav a:visited {
+  color: #007BFF;
+  font-weight: 500;
 }
 #main .about-us-maintext {
   width: 70%;

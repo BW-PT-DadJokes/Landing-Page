@@ -12,7 +12,7 @@ $br: 7px;
     align-items: center;
     nav {
         margin: 0 auto;
-        width: 570px;
+        width: 100%;
         display: flex;
         justify-content: space-evenly;
         border-radius: 0 0 $br $br;
@@ -58,6 +58,16 @@ $br: 7px;
     }
     .text-center {
         margin-bottom: 2rem;
+    }
+    footer {
+        nav {
+            border-radius: $br $br 0 0;
+            background-color: white;
+            a, a:visited {
+                color: $primaryblue;
+                font-weight: 500;
+            }
+        }
     }
     .about-us-maintext {
         width: 70%;
