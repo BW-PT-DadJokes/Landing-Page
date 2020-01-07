@@ -1,0 +1,21 @@
+.about-us-maintext {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+#about-us-rows {
+  max-width: 720px;
+}
+@media (max-width: 575px) {
+  #about-us-rows .col-sm {
+    text-align: center;
+  }
+  #about-us-rows .col-sm a {
+    margin: 0 1rem;
+  }
+  #about-us-rows .col-sm hr {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=about-us.css.map */

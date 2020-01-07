@@ -66,13 +66,14 @@
   color: #007BFF;
   font-weight: 500;
 }
-#main .about-us-maintext {
-  width: 70%;
-  margin: 2rem auto;
-}
 
 #logo {
   margin-right: 0.4rem;
+}
+
+.about-us-maintext {
+  width: 70%;
+  margin: 2rem auto;
 }
 
 #about-us-rows {

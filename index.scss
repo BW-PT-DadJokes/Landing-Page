@@ -71,25 +71,8 @@ $br: 7px;
             }
         }
     }
-    .about-us-maintext {
-        width: 70%;
-        margin: 2rem auto;
-    }
 }
 #logo {
     margin-right: 0.4rem;
 }
-#about-us-rows {
-    max-width: 720px;
-    .col-sm {
-        @media (max-width: 575px) {
-            text-align: center;
-            a {
-                margin: 0 1rem;
-            }
-            hr {
-                display: none;
-            }
-        }
-    }
-}
+@import "about-us";
